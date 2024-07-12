@@ -1,0 +1,71 @@
+/* Define a aparência geral da página com um fundo gradiente e texto centralizado */
+body {
+    font-family: 'Georgia', serif; /* Fonte serifada para um toque mais romântico */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradiente suave em tons de rosa e pêssego */
+    color: #333; /* Cor do texto em tom escuro para melhor leitura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estiliza o contêiner de conteúdo */
+#content {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido para contraste */
+    border-radius: 12px; /* Bordas arredondadas para um visual mais suave */
+    padding: 30px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra leve para um efeito de profundidade */
+    margin-bottom: 20px;
+    max-width: 90%;
+    width: 400px; /* Largura máxima para manter a legibilidade */
+    border: 2px solid #f8c6c9; /* Borda rosa claro para destacar o contêiner */
+}
+
+/* Estiliza o botão */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #ff6f61; /* Rosa suave para o botão */
+    color: #ffffff; /* Texto do botão em branco */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas para um estilo mais suave */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para hover */
+}
+
+button:hover {
+    background-color: #ff4d4d; /* Rosa mais intenso ao passar o mouse */
+    transform: scale(1.05); /* Efeito de ampliação ao passar o mouse */
+}
+
+button:active {
+    background-color: #e14e4e; /* Rosa ainda mais intenso quando o botão é clicado */
+}
+
+/* Estilo para a animação de corações */
+.heart {
+    display: inline-block;
+    font-size: 2rem;
+    color: #e74c3c; /* Cor do coração em vermelho */
+    animation: pulse 1.5s infinite; /* Animação suave de pulsação */
+}
+
+/* Animação de pulsação dos corações */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
